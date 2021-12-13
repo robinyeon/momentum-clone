@@ -1,13 +1,10 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
 
-function handleTitleClick() {
-    const clickedClass = "clicked"
-    if (h1.classList.contains(clickedClass)) {
-        h1.classList.remove(clickedClass);
-    } else {
-        h1.classList.add(clickedClass);
-    }
-    console.log(h1.className);
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    console.log(loginInput.value);
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginForm.addEventListener("submit", onLoginSubmit);
