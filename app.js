@@ -1,5 +1,6 @@
 const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input");
+const link = document.querySelector("a");
 
 
 function onLoginSubmit(event) {
@@ -7,4 +8,9 @@ function onLoginSubmit(event) {
     console.log(loginInput.value);
 }
 
+function handleLinkClick() {
+    alert("wait a minute lol");
+}
+
 loginForm.addEventListener("submit", onLoginSubmit);
+link.addEventListener("click", handleLinkClick)
