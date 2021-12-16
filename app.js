@@ -11,6 +11,7 @@ function onLoginSubmit(event) {
 function handleLinkClick() {
     alert("wait a minute lol");
 }
+// alert blocks any default behavior (and that's the reason why we don't use alert anymore.)
 
 loginForm.addEventListener("submit", onLoginSubmit);
 link.addEventListener("click", handleLinkClick)
