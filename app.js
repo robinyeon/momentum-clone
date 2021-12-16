@@ -8,10 +8,10 @@ function onLoginSubmit(event) {
     console.log(loginInput.value);
 }
 
-function handleLinkClick() {
-    alert("wait a minute lol");
+function handleLinkClick(event) {
+    event.preventDefault();
+    console.dir(event)
 }
-// alert blocks any default behavior (and that's the reason why we don't use alert anymore.)
 
 loginForm.addEventListener("submit", onLoginSubmit);
 link.addEventListener("click", handleLinkClick)
