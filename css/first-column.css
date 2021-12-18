@@ -10,8 +10,14 @@
   bottom: var(--bottom-space);
   text-shadow: var(--text-shadow);
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 #bg-copyright i {
   margin-right: 5px;
+}
+
+#bg-copyright:hover {
+  transform: translateY(-4px);
+  text-shadow: 1px 1px 1px lightpink;
 }
