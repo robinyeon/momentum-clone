@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  width: 33%;
 }
 
 #weather {
@@ -10,21 +11,41 @@
   text-shadow: var(--text-shadow);
 }
 
+#todo-form {
+  position: fixed;
+  bottom: var(--bottom-space);
+}
+
 #todo-form input {
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   font-family: "Jua", sans-serif;
   text-align: center;
   border: none;
   background-color: transparent;
   border-bottom: 3px solid white;
+  width: 260px;
 }
 
 #todo-form input::placeholder {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Jua", sans-serif;
   text-align: center;
+}
+
+#todo-list {
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  font-size: 20px;
+}
+
+#todo-list button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-shadow: var(--text-shadow);
 }
