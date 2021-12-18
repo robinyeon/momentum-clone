@@ -15,7 +15,7 @@ function onGeoSuccess(position) {
 }
 
 function onGeoError() {
-    alert("Can't find your location :(\nSo NO WEATHER for you!");
+    alert("위치 설정을 차단하시면 날씨를 불러올 수 없어요 :(");
 }
 
-navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
+navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError); 
