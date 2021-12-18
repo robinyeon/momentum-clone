@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
 @import "variables.css";
+@import "media-query.css";
 @import "first-column.css";
 @import "second-column.css";
 @import "third-column.css";
