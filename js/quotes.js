@@ -24,7 +24,7 @@ const quotes = [
         author: "김도이",
     },
     {
-        quote: "우후후리히히힌 자하하할못이히히히 업스허",
+        quote: "우리는 잘못이 없어",
         author: "임예은",
     },
     {
