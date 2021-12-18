@@ -16,7 +16,7 @@ function onLoginSubmit(event) {
 
 // 반복되는 행위는 함수로 만들어줌
 function paintGreetings(username) {
-    greeting.innerText = `Hello ${username}!`;
+    greeting.innerText = `${username}님 안녕하세요!`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 

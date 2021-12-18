@@ -1,0 +1,30 @@
+#third-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#weather {
+  font-size: 20px;
+  text-shadow: var(--text-shadow);
+}
+
+#todo-form input {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Jua", sans-serif;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid white;
+}
+
+#todo-form input::placeholder {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Jua", sans-serif;
+  text-align: center;
+}

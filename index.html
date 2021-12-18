@@ -6,35 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Momentum</title>
+    <script
+      src="https://kit.fontawesome.com/8b8c0d1160.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-
-    <h2 id="clock">00:00:00</h2>
-
-    <h1 id="greeting" class="hidden"></h1>
-
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <div id="first-column">
+      <div id="bg-copyright">
+        <i class="fas fa-images"></i>
+        <span>@acornzzi</span>
+      </div>
     </div>
 
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div id="second-column">
+      <h2 id="clock">00:00:00</h2>
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="이름을 적고 엔터를 눌러주세요 :)"
+        />
+        <!-- <input type="submit" value="Log In" /> -->
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <div id="quotes">
+        <span id="quote"></span>
+        <span id="author"></span>
+      </div>
+    </div>
+
+    <div id="third-column">
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="할 일을 적고 엔터를 눌러주세요"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
     </div>
 
     <script src="js/greetings.js"></script>

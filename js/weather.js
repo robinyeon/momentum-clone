@@ -9,13 +9,13 @@ function onGeoSuccess(position) {
             .then(data => {
                 const weatherContainer = document.querySelector("#weather span:first-child");
                 const cityContainer = document.querySelector("#weather span:last-child");
+                weatherContainer.innerText = `${Math.round(data.main.temp)}°C / `;
                 cityContainer.innerText = data.name;
-                weatherContainer.innerText = `${data.weather[0].main} / ${data.main.temp}`;
             }));
 }
 
 function onGeoError() {
-    alert("Can't find your location :( So NO WEATHER for you!")
+    // alert("Can't find your location :(\nSo NO WEATHER for you!")
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);

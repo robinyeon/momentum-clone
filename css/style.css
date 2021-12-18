@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
+@import "variables.css";
+@import "first-column.css";
+@import "second-column.css";
+@import "third-column.css";
+
+body {
+  color: white;
+  font-family: "Jua", sans-serif;
+  margin: 25px var(--bottom-space);
+  display: flex;
+  justify-content: space-between;
+}
+
+#bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .hidden {
   display: none;
 }

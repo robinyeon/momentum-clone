@@ -4,15 +4,15 @@ const quotes = [
         author: "이영현",
     },
     {
-        quote: "이또한 지나가리라",
+        quote: "이 또한 지나가리라",
         author: "민아영",
     },
     {
-        quote: "눕지못하면 실외다",
+        quote: "눕지 못하면 실외다",
         author: "구아영",
     },
     {
-        quote: "발등에 불떨어져서 정수리만 남았다",
+        quote: "발등에 불 떨어져서 정수리만 남았다",
         author: "강서진",
     },
     {
@@ -43,12 +43,16 @@ const quotes = [
         quote: "연습만이 살 길",
         author: "강글솜",
     },
+    {
+        quote: "사람은 누구나 청개구리가 한 마리씩 살고있어",
+        author: "문다혜",
+    },
 ]
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote");
+const author = document.querySelector("#author");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+quote.innerText = `'${todaysQuote.quote}'`;
+author.innerText = `${todaysQuote.author}`;

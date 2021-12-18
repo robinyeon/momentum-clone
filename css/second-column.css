@@ -1,0 +1,54 @@
+#second-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock {
+  display: block;
+  width: 735px;
+  height: 230px;
+  font-size: 200px;
+  margin-top: 40%;
+  text-shadow: var(--text-shadow);
+}
+
+#login-form input:first-child {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Jua", sans-serif;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid white;
+  width: 380px;
+  height: 35px;
+}
+
+#login-form input:first-child::placeholder {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Jua", sans-serif;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}
+
+#greeting {
+  display: block;
+  color: white;
+  font-size: 50px;
+  text-shadow: var(--text-shadow);
+}
+
+#quotes {
+  font-size: 20px;
+  text-shadow: var(--text-shadow);
+  position: fixed;
+  bottom: var(--bottom-space);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
