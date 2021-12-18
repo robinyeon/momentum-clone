@@ -9,6 +9,7 @@
   position: fixed;
   bottom: var(--bottom-space);
   text-shadow: var(--text-shadow);
+  cursor: pointer;
 }
 
 #bg-copyright i {
